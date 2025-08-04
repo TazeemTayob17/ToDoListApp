@@ -1,0 +1,254 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fefae0;
+    box-sizing: border-box;
+}
+
+/* newTask.html styles */
+
+.new-task-heading{
+    width: 300px;          
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-left: 150px;
+    padding-bottom: 30px;
+}
+
+.new-task-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+form label{
+    font-weight: 500;
+}
+
+.new-task-form-field{
+    width: 400px;
+    max-width: 100%;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+}
+
+#task-description{
+    height: 100px;
+    resize: vertical;
+}
+
+#new-task-submit {
+  background-color: #3b82f6;    /* Teal */
+  color: #fefae0;               /* Match your background for good contrast */
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#new-task-submit:hover {
+  background-color: #2563eb;    /* Darker teal */
+}
+
+/* index.html styles */
+
+.to-do-heading {
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 24px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.task-card {
+    background: #fff;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 1rem 1.5rem;
+    margin: 1rem auto;
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.task-card-title{
+    font-size: 18px;
+}
+
+.task-card-dates{
+    font-size: 13px;
+}
+
+.no-tasks-message {
+    text-align: center;
+    color: red;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.calendar-icon {
+    vertical-align: middle;
+    margin-right: 6px;
+    font-size: 1.1em;
+}
+
+.chevron-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    font-size: 2.5rem;         /* Slightly bigger */
+    cursor: pointer;
+    transition: color 0.2s, font-size 0.2s;
+}
+
+.chevron-icon:hover {
+    color: black;            /* Highlight color on hover */
+    font-size: 2.8rem;         /* Slightly larger on hover */
+}
+
+#new-task-btn {
+  background-color: #3b82f6;    
+  color: #fefae0;               
+  padding: 0.60rem 1rem;
+  display: block;
+  margin: 0 auto;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#new-task-btn:hover {
+  background-color: #2563eb;    
+}
+
+.task-card-warning {
+    /*visibility: hidden;*/
+    display: flex;
+    align-items: center;
+    margin-top: 1.2rem;
+    padding: 0.3rem 0 0.1rem 0;
+    color: #b45309;
+    /*color: red;*/
+    font-size: 0.8rem;      /* Smaller text */
+    gap: 0.3rem;
+}
+
+.warning-icon {
+    color: #f59e42;
+    /*color: red;*/
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+.warning-text {
+    font-weight: 500;
+    font-size: 1em;
+}
+
+/* viewTask.html styles */
+
+.task-details {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    padding: 2rem 2.5rem;
+    margin: 3rem auto;
+    max-width: 500px;
+    width: 90%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+}
+
+.task-details h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.task-details .task-card-dates {
+    font-size: 1rem;
+    color: #555;
+}
+
+.task-details .task-card-description {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.task-details {
+    position: relative;
+    /* ...existing styles... */
+}
+
+.task-details-icons-top {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 0.7rem;
+}
+
+.edit-icon {
+    color: #3b82f6;
+    font-size: 2.7rem;
+    cursor: pointer;
+    transition: color 0.2s, font-size 0.2s;
+}
+
+.edit-icon:hover {
+    color: #2563eb;
+    font-size: 2.9rem; /* Slightly larger on hover */
+}
+
+.delete-icon {
+    color: #ef4444;
+    font-size: 2.7rem;
+    cursor: pointer;
+    transition: color 0.2s, font-size 0.2s;
+}
+
+.delete-icon:hover {
+    color: #b91c1c;
+    font-size: 2.9rem; /* Slightly larger on hover */
+}
+
+.complete-icon {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    color: #22c55e;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: color 0.2s, font-size 0.2s;
+}
+
+.complete-icon:hover {
+    color: #15803d;
+    font-size: 3.2rem; /* Slightly larger on hover */
+}
+
+/* editTask.html styles */
+
+.edit-task-heading{
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 24px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
