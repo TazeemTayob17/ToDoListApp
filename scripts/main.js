@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const newTaskBtn = document.getElementById('new-task-btn');
     newTaskBtn.addEventListener("click", event => {
         event.preventDefault();
-        window.location.href = "newTask.html";
+        window.location.href = "../ui/newTask.html";
     });
 
     //Display tasks from localStorage on index.html
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function(){
     document.querySelectorAll(".chevron-icon").forEach(icon => {
         icon.addEventListener("click", function() {
             const idx = this.getAttribute("data-index"); //data-index: something new i learnt with this project
-            window.location.href = `viewTask.html?taskIndex=${idx}`;
+            window.location.href = `../ui/viewTask.html?taskIndex=${idx}`;
         })
     });
 });

@@ -1,4 +1,4 @@
-import { formatDate } from './main.js';
+import { formatDate } from '../scripts/main.js';
 
 //Access query string from URL
 const queryString = window.location.search;
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function(){
         //Edit button functionality
         const editBtn = document.getElementById("edit-btn");
         editBtn.addEventListener("click", () => {
-            window.location.href = `editTask.html?editIndex=${index}`;
+            window.location.href = `../ui/editTask.html?editIndex=${index}`;
         });
 
         //Delete button functionality
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function(){
             localStorage.setItem("tasks", tasksNew);
 
             alert("Task deleted");
-            window.location.href = "index.html";
+            window.location.href = "../index.html";
         });
 
         //Complete button functionality
@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function(){
             
             
             alert("Task completed successfully!");
-            window.location.href = "index.html"; //Redirect to index.html
+            window.location.href = "../index.html"; //Redirect to index.html
         });
     }
 });

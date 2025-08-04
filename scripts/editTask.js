@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
         tasks[index] = updatedTask;
         localStorage.setItem("tasks", JSON.stringify(tasks));
 
-        window.location.href = "index.html";
+        window.location.href = "../index.html";
     });
 
 });

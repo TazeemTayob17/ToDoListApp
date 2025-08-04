@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("tasks", JSON.stringify(tasks));
 
         // Redirect to index.html
-        window.location.href = 'index.html'; 
+        window.location.href = "../index.html"; 
     });
 });
 
